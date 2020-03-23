@@ -1,25 +1,4 @@
 
-// let questions = [
-//     {_id: "123", title: "Question 1", quizId: "123", type: "TRUE_FALSE",
-//         question: "Do you like the beach?",
-//         correct: "TRUE"
-//     },
-//     {_id: "234", title: "Question 2", quizId: "123", type: "MULTIPLE_CHOICE",
-//         question: "What is your favorite color?",
-//         correct: "Blue",
-//         options: [
-//             "Yellow", "Blue", "Red", "Purple"
-//      ]
-//     },
-//     {_id: "345", title: "Question 3", quizId: "123", type: "TRUE_FALSE",
-//         question: "Do you like the mountain?",
-//         correct: "TRUE"},
-//     {_id: "456", title: "Question 4", quizId: "234", type: "MULTIPLE_CHOICE"},
-//     {_id: "567", title: "Question 5", quizId: "123", type: "TRUE_FALSE",
-//         question: "Do you like the sea?",
-//         correct: "FALSE"
-//     }
-// ]
 let questions = [
     {"_id": "123", "title": "JPA True False", "quizId": "234", "question":
             "JPA stands for Java Persistence API", "correct": "true", "type": "TRUE_FALSE"},

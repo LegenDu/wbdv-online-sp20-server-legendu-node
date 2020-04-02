@@ -2,6 +2,9 @@ var bodyParser = require('body-parser')
 var express = require('express')
 var app = express()
 
+const mongoose = require('mongoose')
+mongoose.connect('mongodb://localhost:27017/whiteboard-cs5610-sp20', { useNewUrlParser: true, useUnifiedTopology: true })
+
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
@@ -14,8 +17,10 @@ app.use(function (req,res, next) {
     next();
 });
 
-require('./controllers/quiz.controller.server')(app)
-require('./controllers/question.controller.server')(app)
+require('./controllers/questions.controller.server')(app)
+require('./controllers/quizzes.controller.server')(app)
+require('./controllers/quiz-attempts.controller.server')(app)
+
 
 app.get('/', function (req, res) {
     res.send('hello world')

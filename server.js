@@ -4,7 +4,7 @@ var express = require('express')
 var app = express()
 
 const mongoose = require('mongoose')
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/wbdv-online-sp20-server-legendu-node/whiteboard-cs5610-sp20');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/wbdv-online-sp20-server-legendu-node');
 // mongoose.connect('mongodb://localhost:27017/whiteboard-cs5610-sp20', { useNewUrlParser: true, useUnifiedTopology: true })
 
 app.use(bodyParser.urlencoded({extended: false}))

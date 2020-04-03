@@ -5,13 +5,10 @@ const findAllQuizzes = () =>
 const findQuizById = (qid) =>
     quizzesDao.findQuizById(qid)
 
-const findQuestionsForQuiz = (qid) =>
-    quizzesDao.findQuestionsForQuiz(qid)
 
 module.exports = {
     findAllQuizzes,
-    findQuizById,
-    findQuestionsForQuiz
+    findQuizById
 }
 
 

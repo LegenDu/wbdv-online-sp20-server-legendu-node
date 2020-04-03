@@ -37,8 +37,3 @@ module.exports = {
     findQuestionsForQuiz
 }
 
-
-
-// const findQuestionsForQuiz = (quizId) =>
-//     questions.filter(question => question.quizId === quizId)
-
